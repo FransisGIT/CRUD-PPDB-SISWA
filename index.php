@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="grey">
 
 <head>
     <!-- untuk memanggil file metadata.php -->
@@ -29,7 +29,7 @@
         <li></li>
         <li></li>
     </ul>
-    <div class="container py-[60px] px-[100px] m-auto">
+    <div class="container py-[60px] px-[30px] lg:py-[60px] lg:px-[50px] md:py-[60px] md:px-[50px] sm:py-[60px] sm:px-[50px]  m-auto">
         <header class="bg-gradient-to-tr from-gray-200 to-purple-700 rounded-ss-2xl rounded-se-2xl py-5 "
             style="background-image: url('assets/images/background-banner.jpg'); background-repeat: no-repeat; background-size: cover; background-position-y: 37%;padding-bottom: 140px"
             data-aos="zoom-in"

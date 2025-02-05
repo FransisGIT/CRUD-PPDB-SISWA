@@ -1,6 +1,6 @@
 <div class="page p-4">
     <div class="flex justify-between align-middle items-center">
-        <h2 class="text-2xl font-extrabold mb-4 text-black">Update Siswa</h2>
+        <h2 class="text-lg font-extrabold mb-4 text-white bg-warning px-2 py-1 rounded-3xl">Update Siswa</h2>
         <a href="index.php?page=list-siswa" class="btn btn-sm btn-error text-white">Kembali</a>
     </div>
     <form action="function/updateSiswa.php" method="post" enctype="multipart/form-data" class="space-y-4">
@@ -79,8 +79,8 @@
         <?php } ?>
 
         <div class="mt-4 flex justify-end flex-wrap gap-3">
-            <button type="reset" class="btn btn-error text-white">Reset</button>
-            <button type="submit" class="btn btn-primary text-white">Simpan</button>
+            <button type="reset" class="hover:scale-90 transition-all btn btn-error text-white">Reset</button>
+            <button type="submit" class="hover:scale-90 transition-all btn btn-primary text-white">Simpan</button>
         </div>
     </form>
 </div>

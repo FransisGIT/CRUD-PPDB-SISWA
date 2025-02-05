@@ -1,6 +1,6 @@
 <div class="page">
     <div class="flex justify-between align-middle items-center">
-        <h2 class="text-2xl font-extrabold mb-4 text-black">List Siswa</h2>
+        <h2 class="text-lg font-extrabold mb-4 text-white bg-warning px-2 py-1 rounded-3xl">List Siswa</h2>
 
         <?php
         // untuk memanggil file database
@@ -11,14 +11,13 @@
         $jumlahDataSiswa = mysqli_num_rows($queryDataSiswa)
         ?>
 
-        <h2 class="text-2xl font-extrabold mb-4 text-black">Jumlah data siswa: <?= $jumlahDataSiswa ?></h2>
+        <h2 class="text-lg font-extrabold mb-4 text-white bg-warning px-2 py-1 rounded-3xl">Jumlah data siswa: <?= $jumlahDataSiswa ?></h2>
     </div>
     <div class="flex justify-between flex-wrap py-3">
         <div class="flex justify-start">
-            <p class="text-base text-black font-bold">Daftar list siswa</p>
         </div>
         <div class="flex justify-end">
-            <a href="index.php?page=tambah-siswa" class="btn-sm btn btn-primary text-white font-bold">Tambah Siswa
+            <a href="index.php?page=tambah-siswa" class="hover:scale-90 transition-all btn-sm btn btn-primary text-white font-bold">+ Tambah Siswa
             </a>
         </div>
     </div>
@@ -81,9 +80,9 @@
                             <div
                                 class="flex justify-center items-center flex-wrap gap-4 lg:min-w-[150px] sm:min-w-[50px]">
                                 <a href="function/deleteSiswa.php?id=<?= $dataSiswa['id']; ?>"
-                                    class="btn btn-sm btn-error text-white font-bold min-w-[20px    ]">Hapus</a>
+                                    class="btn btn-sm btn-error text-white font-bold min-w-[20px] hover:scale-90 transition-all">Hapus</a>
                                 <a href="index.php?page=update-siswa&id=<?= $dataSiswa['id']; ?>"
-                                    class="btn btn-sm btn-primary text-white font-bold">Edit</a>
+                                    class="btn btn-sm btn-primary text-white font-bold hover:scale-90 transition-all">Edit</a>
                             </div>
                         </th>
                     </tr>
